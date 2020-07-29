@@ -28,9 +28,10 @@ nav {
   background-color:rgba(235, 222, 199, 0.5);
   grid-area: nav;
   font-size:1em;
+  text-align:center;
   height:auto;
-  border-bottom:1px solid black;
-  border-top:1px solid black;
+  border-bottom:1px solid rgba(0, 0, 0, 0.25);
+  border-top:1px solid rgba(0, 0, 0, 0.25);
 }
 
 nav ul li {
@@ -44,7 +45,7 @@ nav ul:first-child {
 
 nav a {
   font-variation-settings: 'wdth' 600, 'wght' 600;
-  /* font-family:monospace; */
+  font-family: 'Fredoka One', cursive;
   transition: all .25s ease-in-out;
   text-decoration:none;
   color:black;
@@ -100,7 +101,7 @@ section a::before  {
 
 section a:hover::before  {
   content: "☛ ";
-  color:blue;
+  color:rgb(46, 110, 8);
 }
 
 section a:hover::after {
@@ -115,7 +116,8 @@ section::first-letter {
   initial-letter: 1;
   float:left;
   padding:0 16px 0 0;
-  font-variation-settings: 'wdth' 400, 'wght' 800;
+  font-family: 'Fredoka One', cursive;
+  /* font-variation-settings: 'wdth' 400, 'wght' 800; */
 }
 
 .fleuron {
@@ -134,6 +136,10 @@ section::first-letter {
   grid-area: box2;
 }
 
+.section-head {
+  font-family: 'Fredoka One', cursive;
+}
+
 .tagline {
   display:grid;
   grid-area: tagline;
@@ -146,7 +152,7 @@ section::first-letter {
 }
 
 footer {
-  border-top:1px solid black;
+  border-top:1px solid rgba(0, 0, 0, 0.25);
   background-color:rgba(235, 222, 199, 0.5);
   grid-area: footer;
   padding:16px;
@@ -163,9 +169,9 @@ main {
   grid-template-areas:
     ". header header ."
     ". tagline tagline . "
-    ". nav nav ."
+    "nav nav nav nav"
     ". box1 box2 ."
-    ". footer footer .";
+    "footer footer footer footer";
 }
 
 @media screen and (max-width:900px) {
