@@ -108,7 +108,8 @@ nav a:hover {
 #contact textarea {
   border:0;
   box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.137);
-  padding:16px 0 16px 16px;
+  padding:16px;
+  margin:0 16px;
   width:100%;
   box-sizing: border-box;
   resize:none;
@@ -116,13 +117,19 @@ nav a:hover {
 }
 
 #contact button {
-  background-color:rgba(255, 232, 193, 0.5);
+  background-color:rgba(255, 232, 193, 0.25);
   border:1px solid black;
   border-radius:3px;
   padding:12px;
+  margin:0 16px;
+  width: 100%;
   font-variation-settings: 'wdth' 600, 'wght' 600;
   font-family: 'Fredoka One', cursive;
-  box-shadow: 4px 4px 2px 1px rgba(80, 0, 0, .2);
+  /* box-shadow: 4px 4px 2px 1px rgba(80, 0, 0, .2); */
+}
+
+#contact button:hover {
+  background-color:rgba(255, 232, 193, 0.5);
 }
 
 section {
@@ -240,8 +247,8 @@ main {
     ". header header ."
     ". tagline tagline . "
     "nav nav nav nav"
-    ". box1 contact ."
     ". box1 box2 ."
+    ". contact contact ."
     "footer footer footer footer";
 }
 
