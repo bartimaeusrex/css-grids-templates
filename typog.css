@@ -33,6 +33,7 @@ nav {
   border-top:1px solid rgba(0, 0, 0, 0.25);
   position:sticky;
   top:0;
+  line-height: 32px;
 }
 
 nav ul {
@@ -137,7 +138,7 @@ section::first-letter {
 
 #hr-600 {
   display:none;
-}
+} /* «» */
 
 .fleuron {
   text-align:center;
