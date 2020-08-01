@@ -7,6 +7,8 @@
   <link href="typog.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,564;1,400&family=Cutive+Mono&family=Varela+Round&family=Fredoka+One&family=Meddon&display=swap" rel="stylesheet">
 
+  <!-- Doesn't seem to work, which is why I've chosen to hardcode the SVGs (at least for now)... -->
+  <script src="https://kit.fontawesome.com/0b4688c080.js" crossorigin="anonymous"></script>
 
   <title>Mr. Patrick Reinhart: Web Developer + Graphic Designer</title>
 </head>
@@ -16,9 +18,21 @@
     <div id="asterism">⁂</div>
     <div id="hr-600"></div>
   </header>
-    <!-- <div class="tagline">« Web developer, graphic designer, and curious gentleperson. »</div> -->
+    <!-- <div class="tagline">« ..Web developer, graphic designer, and curious gentleperson. »</div> -->
     <nav>
-        <ul>
+
+      <!-- SVG NAVIGATION ICONS FOR < 600px / PHONE DISPLAYS -->
+        <ul class="nav-icons">
+          <li><a href="https://www.linkedin.com/in/mrpatrickreinhart" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a></li>
+          <li><a href=""><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github-square" class="svg-inline--fa fa-github-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path></svg></a></li>
+          <li><a href="#social"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" class="svg-inline--fa fa-link fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg></a></li>
+          <li><a href="#education"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg></a></li>
+          <li><a href="#contact"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></a></li>
+        </ul>
+
+        <!-- REGULAR TEXT NAVIGATION LINKS ,,, -->
+
+        <ul class="nav-text-links">
         <!-- <li><a href="/">Home</a></li> -->
         <!-- <li><a href="#skills">Skills</a></li> -->
         <li><a href="https://www.linkedin.com/in/mrpatrickreinhart" target="_blank">LinkedIn</a></li>
@@ -43,8 +57,8 @@
         <li>and of course <a href="http://tomthebookguy.com">Tom the Book Guy</a>, where I worked for nearly seven years.
       </ul>
       For some of these businesses I also had the opportunity to design logos, album art, flyers, fonts, and even a big city billboard campaign featuring Victorian <em>post mortem</em> photography.
-      <div class="fleuron">❦</div>
-      <div id="skills" class="section-head">Relevant skills and such:</div>
+      <div class="fleuron" id="skills" >❦</div>
+      <div class="section-head">Relevant skills and such:</div>
       <ul>
       <li>HTML5, CSS3, JavaScript</li>
       <ul>
@@ -76,9 +90,11 @@
 <div id="contact">
 <form action="https://formspree.io/xpzybzgq" method="POST">
   <div class="section-head">Contact Patrick:</div>
-  <label><input type="text" name="name" placeholder="Name"></label>
-  <label><input type="text" name="_replyto" placeholder="Email"></label>
-  <label><textarea name="message" wrap="hard" cols="30" rows="5" onfocus="this.value=''; this.onfocus=null;" placeholder="Message"></textarea></label>
+  <label><input type="text" name="name" placeholder="Name" required></label>
+  <label><input type="text" name="_replyto" placeholder="Email" required></label>
+  <label><textarea name="message" wrap="hard" cols="30" rows="5"
+    onfocus="this.value=''; this.onfocus=null;"
+    placeholder="Message" required></textarea></label>
   <button type="submit">SEND</button>
 </form>
 </div>
@@ -88,8 +104,8 @@
       <section class="box2">My passion in life is, broadly speaking, to design and create beautiful, useful things; aesthetically pleasing, viscerally satisfying, graphically clean and cohesive, nutrient-rich <em>product</em>, whatever medium it may find itself in.
         
       <div class="fleuron">❦</div>
-      The internet, and website design specifically, have thus fascinated me since the moment my family got a computer. I have tinkered away ever since, with HTML, CSS, and <a href="#">recently diving into JavaScript and other such things</a>. I have seen the rise and fall of many a trend, many a service. Websites have infinite design potential. Terrifying, and exhilarating at the same time.
-      <div class="fleuron">❦</div>
+      The internet, and website design specifically, have thus fascinated me since the moment my family got a computer. I have tinkered away ever since, with HTML, CSS, and <a href="#skills">recently diving into JavaScript and other such things</a>. I have seen the rise and fall of many a trend, many a service. Websites have infinite design potential. Terrifying, and exhilarating at the same time.
+      <div class="fleuron" id="education">❦</div>
       <div class="section-head">Education:</div>
       <ul>
         <li>2020 - Worcester State University, certificate in Web Development through Stack Education.</li>
@@ -100,9 +116,9 @@
       Essential to mention, in regards passions, are Books; the reading, collecting, binding, buying, selling, reading, the research, and designing; the form, typography!, the history of print and paper, the publishers, the crazy authors and illustrators, and crazier booksellers. ¶ In a broader sense, Story. Tangentially, defunct tech. ... or <em>vintage</em> tech, if you prefer (I do). To whit: my latest obsession is the art of interactive fiction, both choice and parser-based. The theory, practice, and programming of it all. A medium chockfull of untapped potential!
       <div class="fleuron">❦</div>
       I am currently developing <a href="https://curiouser.house/"  target="_blank">Curiouser House Publishing</a> in my spare time, redesigning and republishing classic literature in uniform editions. I have also <a href="#">illustrated two children's books</a>.
-      <div class="fleuron">❦</div>
-      <div class="section-head">I'm not hard to find.</div>
-      <ul id="social">
+      <div class="fleuron" id="social">❦</div>
+      <div class="section-head" >I'm not hard to find.</div>
+      <ul>
         <li><a href="https://mrpat.ch/">MrPat.ch/ - Art & Design Portfolio</a></li>
         <li><a href="https://github.com/bartimaeusrex" target="_blank">GitHub - Bartimaeus Rex</a></li>
         <li><a href="https://www.linkedin.com/in/mrpatrickreinhart/" target="_blank">LinkedIn</a></li>
