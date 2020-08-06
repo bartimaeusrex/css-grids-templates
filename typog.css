@@ -1,9 +1,5 @@
-body {
-  margin:0;
-  box-sizing: border-box;
-}
 
-/* The following variables still need to be implemented */
+/* The following variables still (mostly) need to be implemented */
 
 :root {
   --primary-color:rgba(235, 222, 199, 0.25);
@@ -11,7 +7,15 @@ body {
   --secondary-color:rgb(92, 49, 62);;
   --text-color:black;
   --nav-bg-color:#F5EEE3; /* same color as other yellow, minus opacity */
+  --background-color:white;
   /* --hover-bg: ; */
+}
+
+
+body {
+  margin:0;
+  box-sizing: border-box;
+  background-color:var(--background-color);
 }
 
 header {
@@ -68,7 +72,7 @@ nav a {
   font-family: 'Fredoka One', cursive;
   transition: all .25s ease-in-out;
   text-decoration:none;
-  color:black;
+  color:var(--text-color);
   outline:0 solid rgba(241, 231, 209, 0.514);
 }
 
@@ -88,13 +92,13 @@ nav a:hover {
   /* outline:2em solid rgba(241, 231, 209, 0.25);
   background-color:rgba(241, 231, 209, 0.25); */
   /* padding-top:2.5em;
-  background-color:white; */
+  background-color:var(--background-color); */
   /* border-top:1px solid black; */
   /* font-style: italic; */
 }
 
 nav .svg-inline--fa {
-  color: black;
+  color: var(--text-color);
   height:38px;
 }
 
@@ -178,6 +182,7 @@ section {
   font-variation-settings: 'wdth' 400, 'wght' 400;
   font-size:1em;
   text-align:justify;
+  color:var(--text-color);
 }
 
 section:first-of-type {
@@ -198,6 +203,7 @@ section a {
 section a:hover {
   border-bottom:1px dashed gray;
   background-color:var(--primary-color-hover);
+  color:var(--text-color);
 }
 
 section a::before  {
@@ -210,12 +216,12 @@ section a:hover::before  {
   color:rgb(46, 110, 8);
 }
 
-section a:hover::after {
-  /* z-index:1; */
-  /* width:100px;
-  height:50px; */
+/* section a:hover::after {
+  z-index:1;
+  width:100px;
+  height:50px;
   background-color:yellow;
-}
+} */
 
 section::first-letter {
   font-size:3em;
@@ -367,7 +373,7 @@ main {
     display:block;
     border-bottom:6px double black;
     padding:8px 0;
-    border-color:rgba(0, 0, 0, 0.5);
+    border-color:var(--text-color)
   }
 
   nav {
@@ -387,7 +393,7 @@ main {
     color:rgb(92, 49, 62);
     display:inline-block;
     visibility:visible;
-    margin:16px;
+    margin:8px 0;
     border:0;
   }
 
@@ -405,8 +411,9 @@ main {
   } */
 
   #moon-icon {
-    visibility:visible;
-    display:inline;
+    /* visibility:visible;
+    display:inline; */
+    display:none;
    }
 
   section {
@@ -419,7 +426,7 @@ main {
     padding:0 2em 2em 2em;
   }
   footer {
-    background-color:white;
+    background-color:var(--background-color);
     z-index:-1;
     font-weight:600;
     padding-bottom:0;
@@ -428,8 +435,9 @@ main {
 
 @media screen and (max-width:500px) {
   #sun-icon {
-    visibility:visible;
-    display:inline;
+    /* visibility:visible;
+    display:inline; */
+    display:none;
    }
    #moon-icon {
     /* visibility:visible; */
