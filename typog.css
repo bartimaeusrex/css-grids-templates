@@ -2,13 +2,31 @@
 /* The following variables still (mostly) need to be implemented */
 
 :root {
+  --background-color:white;
   --primary-color:rgba(235, 222, 199, 0.25);
   --primary-color-hover:rgba(255, 232, 193, 0.5);
   --secondary-color:rgb(92, 49, 62);;
   --text-color:black;
   --nav-bg-color:#F5EEE3; /* same color as other yellow, minus opacity */
-  --background-color:white;
   /* --hover-bg: ; */
+  --nav-hover-color:rgb(92, 49, 62);
+  --contact-border-shadow:0 0 15px 4px rgba(0, 0, 0, 0.137);
+
+  --header-font-family:'EB Garamond', serif;
+  --body-font-family:'EB Garamond', serif;
+  --nav-font-family:'Fredoka One', cursive;
+  --section-head-font-family:'Fredoka One', cursive;
+}
+
+.darkmode {
+  --background-color:rgb(22, 19, 22);
+  --primary-color:rgba(67, 55, 85, 0.774);
+  --primary-color-hover:rgba(79, 58, 92, 0.726);
+  --secondary-color:rgb(221, 217, 208);;
+  --text-color:rgb(223, 219, 213);
+  --nav-bg-color:#3e3247; /* same color as other yellow, minus opacity */
+  --nav-hover-color:rgb(218, 191, 157);
+  --contact-border-shadow:0 0 15px 4px rgba(233, 227, 215, 0.356);
 }
 
 
@@ -21,7 +39,7 @@ body {
 header {
   grid-area: header;
   color:var(--text-color);
-  font-family: 'EB Garamond', serif;
+  font-family: var(--header-font-family);
   font-size:4em;
   font-variation-settings: 'wdth' 400, 'wght' 400;
   transition: all .25s ease-in-out;
@@ -69,7 +87,7 @@ nav ul:first-child {
 
 nav a {
   font-variation-settings: 'wdth' 600, 'wght' 600;
-  font-family: 'Fredoka One', cursive;
+  font-family: var(--nav-font-family);
   transition: all .25s ease-in-out;
   text-decoration:none;
   color:var(--text-color);
@@ -88,7 +106,7 @@ nav a:hover::before  {
 
 nav a:hover {
   border-bottom:1px dashed rgba(0, 0, 0, 0.5);
-  color:rgb(92, 49, 62);
+  color:var(--nav-hover-color);
   /* outline:2em solid rgba(241, 231, 209, 0.25);
   background-color:rgba(241, 231, 209, 0.25); */
   /* padding-top:2.5em;
@@ -145,7 +163,7 @@ nav .svg-inline--fa:hover {
 
 #contact textarea {
   border:0;
-  box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.137);
+  box-shadow:var(--contact-border-shadow);
   padding:16px;
   margin:0 16px;
   width:100%;
@@ -162,7 +180,7 @@ nav .svg-inline--fa:hover {
   margin:0 16px;
   width: 100%;
   font-variation-settings: 'wdth' 600, 'wght' 600;
-  font-family: 'Fredoka One', cursive;
+  font-family: var(--nav-font-family);
   /* box-shadow: 4px 4px 2px 1px rgba(80, 0, 0, .2); */
 }
 
@@ -174,6 +192,15 @@ nav .svg-inline--fa:hover {
   position:relative;
   top:2px;
   left:2px;
+}
+
+q {
+  display:block;
+  margin:1em auto;
+  text-align:center;
+  quotes: "“" "”";
+  font-style:italic;
+  font-size:1.25em;
 }
 
 section {
@@ -196,7 +223,7 @@ section:last-of-type {
 section a {
   font-variation-settings: 'wdth' 600, 'wght' 600;
   text-decoration: none;
-  color:black;
+  color:var(--text-color);
   background-color:var(--primary-color);
 }
 
@@ -228,7 +255,7 @@ section::first-letter {
   initial-letter: 1;
   float:left;
   padding:0 16px 0 0;
-  font-family: 'Fredoka One', cursive;
+  font-family: var(--nav-font-family);
   /* font-variation-settings: 'wdth' 400, 'wght' 800; */
 }
 
@@ -265,7 +292,8 @@ ul {
 }
 
 .section-head {
-  font-family: 'Fredoka One', cursive;
+  font-family: var(--section-head-font-family);
+  color:var(--text-color);
 }
 
 .tagline {
@@ -289,7 +317,7 @@ footer {
 }
 
 main {
-  font-family: 'EB Garamond', serif;
+  font-family: var(--body-font-family);;
   display: grid;
   grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
   /* transition-duration: 0.5s; */
