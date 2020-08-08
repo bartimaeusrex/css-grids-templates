@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="typog.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,564;1,400&family=Cutive+Mono&family=Varela+Round&family=Fredoka+One&family=Meddon&display=swap" rel="stylesheet">
+
+  
+  <title>Document</title>
+</head>
+<body>
+  
+<main>
+
+  <section style="width:500px;">
+  
+    <button class="collapsible section-head">WHO I AM</button>
+    <div class="content">
+    Well! I am an ever-developing web developer and graphic designer, <a href="#skills">skilled</a> to one degree or another in several relevant areas (and a few irrevelant ones, too). Throughout my time I have helped develop and design websites for many startups and small businesses:
+
+  <ul>
+    <li>a Thai restaurant</li>
+    <li>a Waldorf school</li>
+    <li>ZebraMinds; an interactive children's book app startup company</li>
+    <li>an Americana singer-songwriter</li>
+    <li>a vintage costume shop</li>
+    <!-- <li>a sex addicts anonymous group</li> -->
+    <li>and of course <a href="http://tomthebookguy.com">Tom the Book Guy</a>, where I worked for nearly seven years.
+  </ul>
+  For some of these businesses I also had the opportunity to design logos, album art, flyers, fonts, and even a big city billboard campaign featuring Victorian <em>post mortem</em> photography.
+  
+</div>
+<!-- 
+  <div class="fleuron" id="skills" ></div> -->
+
+  <button class="collapsible section-head">SKILLS</button>
+    <div class="content">
+  <ul>
+  <li>HTML5, CSS3, JavaScript</li>
+  <ul>
+    <li>I have been working with HTML and CSS for over twenty years, to one extent or another. Javascript is a more recent development that I am excited to explore further. From coding in Notepad and uploading my fansites through FTP to Tripod and FortuneCity, to Wordpress, and finally finding my way to React.</li>
+  </ul>
+  <li>React, SQL, Express, Node.js</li>
+  <ul>
+    <li>Similarly with Javascript, my experience with these is much more recent. I am especially enamored with React, and all its inherent possibilities.</li>
+  </ul>
+  <li>Adobe InDesign, Illustrator, Photoshop</li>
+  <li>Social Media Management</li>
+  <ul>
+    <li>I have always been fascinated by the usage and evolution of blogging platforms and social media. Most notably, I ran the website and social media for <a href="http://www.tomthebookguy.com/">Tom The Book Guy</a> for seven years, utilizing Facebook, Twitter, and Pinterest. For a short while I ran the social media for a costume shop in Denver, where (among other things) I got to design a billboard campaign.</li>
+  </ul>
+  <li>Wordpress</li>
+  <li>Typography</li>
+  <ul><li>A fascination and side obsession, that plays nicely into all my design projects, especially in book design and my <a href="https://curiouser.house/">Curiouser House Publishing</a>. I've made a couple of fonts:
+    <ul>
+      <li><a href="https://gumroad.com/l/friedrichwilhelm-font" target="_blank">FriedrichWilhelm</a></li>
+      <li><a href="https://gumroad.com/l/ziyZ"  target="_blank">Fontenay-aux-Roses</a>.</li>
+    </li>
+    </ul>
+  </ul>
+</div>
+
+
+
+  <div class="fleuron"></div>
+
+  <q>As I see it, life is an effort to grip before they slip through one's fingers and slide into oblivion, the startling, the ghastly, or the blindingly exquisite fish of the imagination before they whip away on the endless current and are lost forever in oblivion's black ocean.</q>
+  <div class="quote-author">Mervyn Peake</div>
+
+
+
+  </section>
+
+
+</main>
+
+
+
+<!-- COLLAPSIBLE JS -->
+
+<script>
+  const coll = document.getElementsByClassName("collapsible");
+  let i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      let content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+</html>
